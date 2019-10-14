@@ -33,7 +33,9 @@ public class Main {
                     String newStr = rstr + " " + denominations[i];
                     paths[j].add(newStr);
                 }
+                
             }
+            
         }
 
         System.out.println("Ways of paying (using only combinations) rupees " + amt + " are: " + storage[amt]);
@@ -62,11 +64,15 @@ public class Main {
                         String newStr = rstr + " " + denominations[i];
                         paths[j].add(newStr);
                     }
+                    
                 }
+                
             }
+            
         }
 
         System.out.println("Ways of paying (including permutations) rupees " + amt + " are: " + storage[amt]);
         System.out.println("Path is given by: " + paths[amt]);
     }
+
 }
